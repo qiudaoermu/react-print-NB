@@ -1,0 +1,28 @@
+{
+  "name": "react-print-nb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiudaoermu/react-print-NB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qiudaoermu/react-print-NB/issues"
+  },
+  "browser": "dist/js.print.js",
+  "module": "dist/js.print.mjs",
+  "dependencies": {
+    "rollup": "^2.0.0",
+    "rollup-plugin-filesize": "^9.1.1",
+    "rollup-plugin-license": "^2.5.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "homepage": "https://github.com/qiudaoermu/react-print-NB#readme"
+}
