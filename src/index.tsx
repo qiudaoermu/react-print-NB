@@ -1,16 +1,16 @@
 import localPrint from "./print"
 import * as React from "react";
+import cloneDeep from "lodash/cloneDeep"
 export default class ReactToPrint extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   onPrint() {
-    localPrint(this.props.children.props.id)
+    localPrint("react-print-onPage")
   }
   render() {
+    const asign = cloneDeep(this.props.children)
+    asign.props.id = "react-print-onPage"
     return (
       <div>
-        {this.props.children}
+        {asign}
       </div>
     )
   }

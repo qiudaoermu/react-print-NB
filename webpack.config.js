@@ -1,22 +1,12 @@
-var webpack = require('webpack');
-var uglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
-var definePlugin = webpack.DefinePlugin;
+'use strict';
 
-module.exports = {
-  entry: './src/index.js',
-  output: {
-    path: './dist/',
-    filename: 'react-print.js'
-  },
-  module: {
-    loaders: [{
-      test: /\.js[x]?$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader?presets[]=es2015&presets[]=react&presets[]=stage-0'
-    }]
-  },
-  plugins: [
-    new uglifyJsPlugin({ compress: { warnings: false } }),
-    new definePlugin({ 'process.env': { NODE_ENV: '"production"' } })
-  ]
+module.exports = () => {
+  if (process.env.NODE_ENV === 'development') {
+    console.log('Building dev bundle...');
+    return require("./webpack.dev.config");
+  }
+  if (process.env.NODE_ENV === 'production') {
+    console.log('Building prod bundle...');
+    return require("./webpack.prod.config");
+  }
 };

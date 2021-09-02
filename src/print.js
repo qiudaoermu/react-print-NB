@@ -16,19 +16,19 @@ const localPrint = (id) => {
     preview: binding.value.preview || false, // 是否启动预览模式
     asyncUrl: binding.value.asyncUrl,
     previewBeforeOpenCallback() { // 预览窗口打开之前的callback
-      binding.value.previewBeforeOpenCallback && binding.value.previewBeforeOpenCallback(vue)
+      binding.value.previewBeforeOpenCallback && binding.value.previewBeforeOpenCallback()
     },
     previewOpenCallback() { // 预览窗口打开之后的callback
-      binding.value.previewOpenCallback && binding.value.previewOpenCallback(vue)
+      binding.value.previewOpenCallback && binding.value.previewOpenCallback()
     },
     openCallback() { // 调用打印之后的回调事件
-      binding.value.openCallback && binding.value.openCallback(vue)
+      binding.value.openCallback && binding.value.openCallback()
     },
     closeCallback() {
-      binding.value.closeCallback && binding.value.closeCallback(vue)
+      binding.value.closeCallback && binding.value.closeCallback()
     },
     beforeOpenCallback() {
-      binding.value.beforeOpenCallback && binding.value.beforeOpenCallback(vue)
+      binding.value.beforeOpenCallback && binding.value.beforeOpenCallback()
     }
   });
 

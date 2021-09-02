@@ -1,0 +1,20 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "declaration": false,
+    "downlevelIteration": false,
+    "importHelpers": false,
+    "jsx": "react",
+    "noFallthroughCasesInSwitch": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "outDir": "lib",
+    "removeComments": false,
+    // "sourceMap": true,
+    "strict": false,
+    "target": "ES5",
+  },
+  "include": [
+    "./src"
+  ]
+}
