@@ -1,4 +1,4 @@
-# react - print - NB
+# react - print - nb
 react print 
 ### example:
 ```
