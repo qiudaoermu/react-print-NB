@@ -1,11 +1,11 @@
 {
   "name": "react-print-nb",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/react-print.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx rollup -c"
+    "build": "rimraf dist && webpack"
   },
   "repository": {
     "type": "git",
@@ -54,11 +54,14 @@
     "react": "^15.5.0",
     "react-dom": "^15.5.0",
     "react-test-renderer": "^15.5.4",
-    "rimraf": "^2.5.4",
+    "rimraf": "^2.7.1",
     "style-loader": "~0.12.3",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.9",
     "webpack-dev-server": "1.12.1"
   },
-  "homepage": "https://github.com/qiudaoermu/react-print-NB#readme"
+  "homepage": "https://github.com/qiudaoermu/react-print-NB#readme",
+  "dependencies": {
+    "webpack": "^1.15.0"
+  }
 }

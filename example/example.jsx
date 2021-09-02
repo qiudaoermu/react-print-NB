@@ -1,3 +1,4 @@
+import Print from "react-print-nb"
 class demo extends Component {
     render() {
         return (
