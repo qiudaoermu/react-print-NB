@@ -1,6 +1,6 @@
 import localPrint from "./print"
 import * as React from "react";
-import cloneDeep from "lodash/cloneDeep"
+let cloneDeep = require('lodash.clonedeep');
 export default class ReactToPrint extends React.Component {
   onPrint() {
     localPrint("react-print-onPage")
