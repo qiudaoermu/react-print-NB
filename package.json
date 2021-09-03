@@ -1,6 +1,6 @@
 {
   "name": "react-print-nb",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "print used in react",
   "main": "./lib/index",
   "files": [
@@ -13,7 +13,7 @@
     "prepare": "npm run build && npm --no-git-tag-version version patch"
   },
   "pre-commit": [
-    "lint"
+    "prepare"
   ],
   "repository": {
     "type": "git",
