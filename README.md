@@ -6,17 +6,17 @@ ___
 #### Calling from class components
 
 ```
-import ReactToPrint from "react-print-nb"
+import reactPrintNb from "react-print-nb"
 export default class Print extends React.Component { {
   render() {
     return (
       <div>
         <button onClick={() => {this.refs.test.onPrint()}}>print</button>
-        <ReactToPrint ref="test">
+        <reactPrintNb ref="test">
           <div> 
             //print content
           </div>
-        </ReactToPrint>
+        </reactPrintNb>
       </div>
     );
   }
@@ -24,4 +24,4 @@ export default class Print extends React.Component { {
 ```
 ### Demo
 ___
- [![Edit react-to-print](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/nifty-sunset-wm7f2)
+[![Edit react - to - print](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/nifty-sunset-wm7f2)
