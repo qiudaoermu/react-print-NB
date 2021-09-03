@@ -1,6 +1,6 @@
 {
   "name": "react-print-nb",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "print used in react",
   "main": "./lib/index",
   "files": [
@@ -12,6 +12,9 @@
     "lint": "eslint src/*.{js,tsx}",
     "prepare": "npm run build && npm --no-git-tag-version version patch"
   },
+  "pre-commit": [
+    "prepare"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/qiudaoermu/react-print-NB.git"
@@ -46,7 +49,8 @@
   },
   "homepage": "https://github.com/qiudaoermu/react-print-NB#readme",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "pre-commit": "^1.2.2"
   },
   "lint-staged": {
     "*.{ts,tsx}": [

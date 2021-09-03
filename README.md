@@ -2,19 +2,21 @@
 react print 
 ### example:
 ```
-import print from "react-print-nb"
+import ReactToPrint from "react-print-nb"
 export default class Print extends React.Component { {
   render() {
     return (
       <div>
         <button onClick={() => {this.refs.test.onPrint()}}>print</button>
-        <Print ref="test">
+        <ReactToPrint ref="test">
           <div> 
             //print content
           </div>
-        </Print>
+        </ReactToPrint>
       </div>
     );
   }
 }
 ```
+###Demo
+[![Edit react-to-print](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/nifty-sunset-wm7f2)
