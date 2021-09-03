@@ -1,6 +1,6 @@
 {
   "name": "react-print-nb",
-  "version": "1.0.26",
+  "version": "1.0.31",
   "description": "print used in react",
   "main": "./lib/index",
   "files": [
@@ -10,9 +10,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production webpack --progress",
     "lint": "eslint src/*.{js,tsx}",
-    "publish": "npm publish",
+    "register": "npm publish",
     "prepare": "npm run build && npm --no-git-tag-version version patch"
   },
+  "pre-commit": [
+    "register"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/qiudaoermu/react-print-NB.git"
