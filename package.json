@@ -1,6 +1,6 @@
 {
   "name": "react-print-nb",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "print used in react",
   "main": "./lib/index",
   "files": [
