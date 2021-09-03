@@ -9,7 +9,7 @@ class demo extends Component {
       <div>
         <button onClick={() => {this.refs.test.onPrint()}}>print</button>
         <Print ref="test">
-          <div id="printMe"> // don't forgit give an id;
+          <div> 
             <p>show</p>
             <p className="printHide">hide</p>
           </div>

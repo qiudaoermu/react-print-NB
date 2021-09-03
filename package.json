@@ -1,19 +1,22 @@
 {
   "name": "react-print-nb",
-  "version": "1.0.4",
+  "version": "1.0.2",
   "description": "print used in react",
   "main": "./lib/index",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production webpack --progress",
     "lint": "eslint src/*.{js,tsx}",
-    "prepare": "npm run build && husky install"
+    "prepare": "npm run build && npm --no-git-tag-version version patch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/qiudaoermu/react-print-NB.git"
   },
-  "author": "",
+  "author": "stat_chen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/qiudaoermu/react-print-NB/issues"
@@ -39,11 +42,12 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.39.0",
     "webpack-cli": "^4.7.2",
-    "prop-types": "^15.7.2",
-    "lodash": "^4.17.21"
+    "prop-types": "^15.7.2"
   },
   "homepage": "https://github.com/qiudaoermu/react-print-NB#readme",
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
   "lint-staged": {
     "*.{ts,tsx}": [
       "eslint"
