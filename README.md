@@ -1,6 +1,10 @@
 ## react - print - nb
+react print plugin, Simple, fast, convenient, light.
 
-####react print 
+## Install
+```
+npm install react-print-nb --save
+```
 
 ## Demo
 
