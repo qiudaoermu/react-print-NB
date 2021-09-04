@@ -20,6 +20,7 @@ export default class App extends React.Component {
           print
         </button>
         <ReactPrintNb ref="test">
+          {/* print content */}
           <p>
             <h1>you are beatiful</h1>
            <img src="https://img1.baidu.com/it/u=425067323,3523178242&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500"/>
@@ -33,4 +34,4 @@ export default class App extends React.Component {
 ```
 ### Demo
 ___
-[![Edit react - to - print](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/nifty-sunset-wm7f2)
+[![Edit react - to - print](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/competent-cdn-ofcyy)
