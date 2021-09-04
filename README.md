@@ -1,8 +1,13 @@
-# react - print - nb
+## react - print - nb
 
-react print 
-### example:
-___
+####react print 
+
+## Demo
+
+[![Edit react - to - print](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/competent-cdn-ofcyy)
+## example:
+
+
 #### Calling from class components
 
 ```
@@ -32,6 +37,3 @@ export default class App extends React.Component {
 }
 
 ```
-### Demo
-___
-[![Edit react - to - print](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/competent-cdn-ofcyy)
