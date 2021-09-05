@@ -147,7 +147,7 @@ export default class {
 
   }
   write(PADocument) {
-    debugger
+    
     PADocument.open();
     PADocument.write(`${this.docType()}<html>${this.getHead()}${this.getBody()}</html>`);
     PADocument.close();
