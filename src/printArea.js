@@ -147,7 +147,6 @@ export default class {
 
   }
   write(PADocument) {
-    
     PADocument.open();
     PADocument.write(`${this.docType()}<html>${this.getHead()}${this.getBody()}</html>`);
     PADocument.close();
@@ -205,9 +204,10 @@ export default class {
   }
 
   getBody() {
-    let ids = this.settings.ids;
-    ids = ids.replace(new RegExp("#", "g"), '');
-    this.elsdom = this.beforeHanler(document.getElementById(ids));
+    let htmlNode = this.settings.node;
+    // ids = ids.replace(new RegExp("#", "g"), '');
+    htmlNode.style.display = "block";
+    this.elsdom = this.beforeHanler(htmlNode);
     let ele = this.getFormData(this.elsdom);
     let htm = ele.outerHTML;
     return '<body>' + htm + '</body>';

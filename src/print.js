@@ -1,10 +1,10 @@
 import Print from './printArea.js';
-const localPrint = (id) => {
+const localPrint = (node) => {
   let binding = {
     value: {}
   }
   new Print({
-    ids: id, // * 局部打印必传入id
+    node: node, // * 局部打印必传入id
     url: binding.value.url, // 打印指定的网址，这里不能跟id共存 如果共存id的优先级会比较高
     standard: '', // 文档类型，默认是html5，可选 html5，loose，strict
     extraHead: binding.value.extraHead, // 附加在head标签上的额外标签,使用逗号分隔
