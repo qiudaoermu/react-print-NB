@@ -2,7 +2,7 @@
 react print plugin, Simple, fast, convenient, light.
 
 ## Install
-```
+  ```
 npm install react-print-nb --save
 ```
 
