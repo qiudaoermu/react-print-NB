@@ -1,6 +1,6 @@
 {
   "name": "react-print-nb",
-  "version": "1.0.39",
+  "version": "1.0.40",
   "description": "print used in react",
   "main": "./lib/index",
   "files": [
@@ -48,7 +48,6 @@
     "webpack-cli": "^4.7.2",
     "prop-types": "^15.7.2"
   },
-  "homepage": "https://github.com/qiudaoermu/react-print-NB#readme",
   "dependencies": {
     "lodash": "^4.17.21",
     "pre-commit": "^1.2.2"
