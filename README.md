@@ -8,7 +8,7 @@ npm install react-print-nb --save
 
 ## Demo
 
-[![Edit react - to - print](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/competent-cdn-ofcyy)
+[![Edit react - to - print](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/wonderful-chihiro-bom93)
 ## example:
 
 
