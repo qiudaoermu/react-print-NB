@@ -1,6 +1,6 @@
 {
   "name": "react-print-nb",
-  "version": "1.0.41",
+  "version": "1.0.42",
   "description": "print used in react",
   "main": "./lib/index",
   "files": [
@@ -49,7 +49,6 @@
     "prop-types": "^15.7.2"
   },
   "dependencies": {
-    "lodash": "^4.17.21",
     "pre-commit": "^1.2.2"
   },
   "lint-staged": {
